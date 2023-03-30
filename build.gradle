@@ -1,8 +1,10 @@
 plugins {
     id 'java'
+    id("maven-publish")
 }
 
 group = 'org.bobpark'
+version = '0.0.1'
 sourceCompatibility = '17'
 
 repositories {
@@ -19,4 +21,24 @@ dependencies {
 
 tasks.named('test') {
     useJUnitPlatform()
+}
+
+publishing {
+    repositories {
+        maven {
+            name = "GitHubPackages"
+            url = uri("https://maven.pkg.github.com/bob-park/dependency-repository")
+            credentials {
+                username = project.findProperty("gpr.user") ?: System.getenv("USERNAME")
+                password = project.findProperty("gpr.key") ?: System.getenv("TOKEN")
+            }
+        }
+    }
+
+    publications {
+        gpr(MavenPublication) {
+            from(components.java)
+        }
+    }
+
 }

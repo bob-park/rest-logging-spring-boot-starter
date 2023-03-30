@@ -36,3 +36,4 @@ generated/
 
 ### VS Code ###
 .vscode/
+/gradle.properties
