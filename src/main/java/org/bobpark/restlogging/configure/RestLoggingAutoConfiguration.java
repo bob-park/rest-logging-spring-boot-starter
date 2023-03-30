@@ -1,4 +1,4 @@
-package org.bobpark.restlgging.configure;
+package org.bobpark.restlogging.configure;
 
 
 import org.springframework.boot.autoconfigure.AutoConfiguration;
@@ -8,9 +8,9 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Conditional;
 import org.springframework.core.Ordered;
 
-import org.bobpark.restlgging.configure.condition.RestLoggingCondition;
-import org.bobpark.restlgging.configure.properties.RestLoggingProperties;
-import org.bobpark.restlgging.filter.RestLoggingFilter;
+import org.bobpark.restlogging.configure.condition.RestLoggingCondition;
+import org.bobpark.restlogging.configure.properties.RestLoggingProperties;
+import org.bobpark.restlogging.filter.RestLoggingFilter;
 
 @AutoConfiguration
 @Conditional(RestLoggingCondition.class)

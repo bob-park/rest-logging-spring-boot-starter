@@ -1,4 +1,4 @@
-package org.bobpark.restlgging.wrapper;
+package org.bobpark.restlogging.wrapper;
 
 import java.io.ByteArrayInputStream;
 import java.io.IOException;

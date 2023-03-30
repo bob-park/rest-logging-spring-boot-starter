@@ -1,4 +1,4 @@
-package org.bobpark.restlgging.configure.condition;
+package org.bobpark.restlogging.configure.condition;
 
 import org.springframework.context.annotation.Condition;
 import org.springframework.context.annotation.ConditionContext;

@@ -1,4 +1,4 @@
-package org.bobpark.restlgging.configure.properties;
+package org.bobpark.restlogging.configure.properties;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 

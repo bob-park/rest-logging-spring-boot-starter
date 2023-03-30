@@ -1,4 +1,4 @@
-package org.bobpark.restlgging.filter;
+package org.bobpark.restlogging.filter;
 
 
 import java.io.IOException;
@@ -19,7 +19,7 @@ import org.springframework.util.StreamUtils;
 import org.springframework.web.filter.OncePerRequestFilter;
 import org.springframework.web.util.ContentCachingResponseWrapper;
 
-import org.bobpark.restlgging.wrapper.CachedBodyHttpServletRequestWrapper;
+import org.bobpark.restlogging.wrapper.CachedBodyHttpServletRequestWrapper;
 
 @Slf4j
 public class RestLoggingFilter extends OncePerRequestFilter {
